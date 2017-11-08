@@ -199,12 +199,13 @@ font-size: 18px;
 }
 
 .main_text_box p{
-    font-size: 33px;
+    font-size: 30px;
     color: #545151;
     padding-top: 0px;
     margin-top: 0px;
     background-color: #fff;
-    padding: 5px 40px;
+    padding: 5px 35px;
+    text-transform: uppercase;
 }
 
 .main_text_box h1{

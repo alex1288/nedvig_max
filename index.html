@@ -100,19 +100,23 @@
 
 
 
-
 <section class="plan_app" >
 	<div class="white_style" >
 
-<div class="container">
-	<div class="col-md-12">
+		<div class="container">
 			<h2>Планировки квартир</h2>
-		<div class="row">
-			<div class="block-one-example">
-					<div id="customNav" class="owl-my-nav"></div>
-					<div class="owl-carousel block-items">
-						<div class="item">
-							<div class="inner-testimonial">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'studio')"  id="defaultOpen">Студия</button>
+						<button class="tablinks" onclick="openCity(event, '1st')">Однушка</button>
+						<button class="tablinks" onclick="openCity(event, '2nd')">Двушка</button>
+						<button class="tablinks" onclick="openCity(event, '3rd')">Трешка</button>
+					</div>
+
+
+					<div id="studio" class="tabcontent">
+						<div class="inner-testimonial">
 								<div class="col-lg-4">
 									<img src="img/rooms/s-1.jpg" alt="">
 								</div>
@@ -125,9 +129,10 @@
 										Стоимость уточняйте по телефону 48-48-48
 									</p></div>
 								</div>
-							</div>
-							<div class="item">
-								<div class="inner-testimonial">
+					</div>
+
+					<div id="1st" class="tabcontent">
+						<div class="inner-testimonial">
 									<div class="col-lg-4">
 									<img src="img/rooms/1-2.jpg" alt="">
 								</div>
@@ -141,9 +146,10 @@
 									</p>
 									</div>
 								</div>
-							</div>
-							<div class="item">
-								<div class="inner-testimonial">
+					</div>
+
+					<div id="2nd" class="tabcontent">
+						<div class="inner-testimonial">
 									<div class="col-lg-4">
 									<img src="img/rooms/2-1.jpg" alt="">
 								</div>
@@ -158,21 +164,53 @@
 										</p>
 									</div>
 								</div>
-							</div>
-						</div>
 					</div>
+
+					<div id="3rd" class="tabcontent">
+						<div class="inner-testimonial">
+								<div class="col-lg-4">
+									<img src="img/rooms/s-1.jpg" alt="">
+								</div>
+								<div class="col-lg-8">
+									<h3 class="city-name">Трехкомнатная</h3>
+									<p class="text-testimonial">
+										Количество комнат 1<br>
+										Общая площадь 52.60 м2<br>
+										Жилая площадь 30.50 м2<br>	
+										Стоимость уточняйте по телефону 48-48-48
+									</p></div>
+								</div>
+					</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+				</div>
+			</div>
 		</div>
+		
 	</div>
 </div>
 
-
-
-
-	</div>
 </section>
 
 
-<section class="how_to_buy" style="height: 500px;">
+<section class="how_to_buy">
 <h2>Как купить</h2>
 
 <div class="container">
@@ -205,7 +243,7 @@
 </section>
 
 <section class="place " >
-	<div class="white_gr_style" style="height: 502px;"></div>
+<!-- 	<div class="white_gr_style" style="height: 502px;"></div> -->
 <h2>Расположение</h2>
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2fb7cce1cf704eaa33271820cc33cba53a7231e6d2cb3438d5669a52908cdfa3&amp;width=100%25&amp;height=502&amp;lang=ru_RU&amp;scroll=false"></script>
 </section>

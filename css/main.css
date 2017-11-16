@@ -262,6 +262,8 @@ text-align: center;
 }
 .main_form form{
   text-align: center;
+  padding-bottom: 15px;
+
 }
 
 
@@ -270,7 +272,7 @@ text-align: center;
     margin: auto;
     width: 75%;
     text-align: center;
-    height: 50px;
+    height: 40px;
     margin: auto;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -278,6 +280,9 @@ text-align: center;
 
 .main_form a{
 font-size: 27px;
+color: #fff;
+border: 2px solid #fff;
+    padding: 5px 15px;
 }
 
 .plan_app {
@@ -383,6 +388,28 @@ font-weight: 900;
 
 }
 
+.ipoteka ul{
+text-align: center;
+}
+.ipoteka ul li{
+    display: inline-block;
+    width: 45%;
+    padding: 0px;
+    margin: 16px;
+    background-position: 50% 59%;
+    background-size: cover;
+    min-height: 285px;
+    text-align: left;
+    -webkit-box-shadow: 13px 24px 45px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 24px 45px -19px rgba(0,0,0,0.75);
+box-shadow: 13px 24px 45px -19px rgba(0,0,0,0.75);
+}
+.ipoteka ul li img{
+position: absolute;
+right: 10px;
+bottom: 10px;
+}
+
 .bank_item{
   position: relative;
   top: 0px;
@@ -393,9 +420,14 @@ font-weight: 900;
      -o-transition:   0.5s ease-out 0s;
      transition:  0.5s ease-out 0s;
      transform: scale(1);
-     min-height: 285px;
+     /*min-height: 285px;*/
 
 
+}
+
+.bank_item_title{
+  margin: 0;
+      background-color: rgba(0, 0, 0,0.1);
 }
 
 /*.bank_item:hover{
@@ -408,7 +440,7 @@ box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 }*/
 
 .bank_item img{
-    width: 80%;
+    width: 40%;
     margin: auto;
     position: relative;
     display: block;
@@ -417,9 +449,17 @@ box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 
 
 .bank_item p{
-  font-size: 21px;
+  font-size: 23px;
   margin-left: 10%;
 }
+
+.bank_item h3 {
+font-size: 27px;
+color: #fff;
+font-weight: 900;
+  margin: 0;
+  padding: 15px 15px;
+  }
 
 .border_rl {
   border-right: 1px solid gray;
@@ -429,6 +469,8 @@ box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 
 
 .place {}
+
+
 .place h3{
   text-align: center;
   font-weight: 900;
@@ -439,6 +481,7 @@ box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 
 .place_items ul{
 text-align: center;
+padding: 25px 0px;
 }
 
 .place_items ul li{
@@ -460,11 +503,77 @@ background-color: rgba(255,255,255,0.6);
 
 }
 
-.mask{
 
+.change{
+  background-image: url(https://d18178273alp6b.cloudfront.net/production/bdsellerassets/ceramic-porcelain-tile/salerno/images/salerno-porcelain-tile---wilderness-series/images/15000013-wilderness-white-angle.jpg);
+-webkit-background-size: cover;
+ background-size: cover; 
+}
+
+.change_dbl {
+  background-image: url(img/key.png);
+background-position: 90% 100%;
+background-size: 400px;
+background-repeat: no-repeat;
+ background-color: rgba(255, 255, 255, 0.5); 
 }
 
 
+
+.change_box{
+background-image: url(img/y.jpg);
+    background-position: 50% 59%;
+    background-size: cover;
+    width: 75%;
+-webkit-box-shadow: 8px 35px 77px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 35px 77px -19px rgba(0,0,0,0.75);
+box-shadow: 8px 35px 77px -19px rgba(0,0,0,0.75);
+position: relative;
+top: 30px;
+}
+
+
+.change_title {
+    margin: 0;
+    background-color: rgba(0, 0, 0,0.1);
+}
+.change_title h3{
+font-size: 27px;
+    color: #fff;
+    font-weight: 900;
+    margin: 0;
+    padding: 15px 15px;
+
+}
+
+.change_desc {
+padding: 15px 25px;
+}
+
+
+.change_desc ul li{
+  padding-left: 20px;
+}
+.change_desc p{
+
+line-height: 20px;
+}
+
+.gallery{
+padding: 25px 0px;
+}
+.gallery ul{
+text-align: center;
+}
+
+.gallery ul li{
+    width: 19.7%;
+display: inline-block;
+}
+
+.gallery ul li img{
+width: 100%
+}
 
 /*==========Карусель ==========*/
 

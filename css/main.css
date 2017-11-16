@@ -285,7 +285,7 @@ border: 2px solid #fff;
     padding: 5px 15px;
 }
 
-.plan_app {
+.plan_app, .ipoteka{
   background-image: url(img/plan_bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
@@ -390,6 +390,7 @@ font-weight: 900;
 
 .ipoteka ul{
 text-align: center;
+position: relative;
 }
 .ipoteka ul li{
     display: inline-block;
@@ -403,6 +404,7 @@ text-align: center;
     -webkit-box-shadow: 13px 24px 45px -19px rgba(0,0,0,0.75);
 -moz-box-shadow: 13px 24px 45px -19px rgba(0,0,0,0.75);
 box-shadow: 13px 24px 45px -19px rgba(0,0,0,0.75);
+position: relative;
 }
 .ipoteka ul li img{
 position: absolute;
@@ -468,7 +470,9 @@ font-weight: 900;
 
 
 
-.place {}
+.place {
+      background-color: #f3f3f3;
+}
 
 
 .place h3{
@@ -499,7 +503,7 @@ font-weight: 900;
 .place h2{
 //position: absolute;
     z-index: 10000;
-background-color: rgba(255,255,255,0.6);
+//background-color: rgba(255,255,255,0.6);
     display: block;
     left: 0;
     right: 0;
@@ -555,8 +559,20 @@ padding: 15px 25px;
 
 
 .change_desc ul li{
-  padding-left: 20px;
+  //padding-left: 20px;
 }
+
+.change_desc ul li p:before {
+    border: 2px solid #c63836;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    content: " ";
+    margin: 0 10px 0 0;
+    border-radius: 100%
+}
+
+
 .change_desc p{
 
 line-height: 20px;
@@ -572,7 +588,11 @@ text-align: center;
 .gallery ul li{
     width: 19.7%;
 display: inline-block;
+margin-bottom: 4px;
+overflow: hidden;
+height: 120px;
 }
+
 
 .gallery ul li img{
 width: 100%

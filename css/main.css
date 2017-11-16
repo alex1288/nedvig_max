@@ -62,6 +62,15 @@ h2 {
 
 }
 
+h2:after{
+content: " ";
+    background-color: rgba(255, 219, 77, 1);
+    width: 25px;
+    height: 6px;
+    margin: 5px auto 0;
+    position: relative;
+    display: block;
+}
 
 h3{
 	font-size: 20px;
@@ -183,7 +192,7 @@ font-size: 18px;
 
 .main_box{
  height: 667px;
- background-image: url(img/maxresdefault.jpg);
+ background-image: url(img/maxresdefault1.jpg);
  background-repeat: no-repeat;
  -webkit-background-size: auto;
  background-size: cover;
@@ -194,37 +203,61 @@ font-size: 18px;
 
 .main_text_box {
   position: relative;
-  top:150px;
+  top:50px;
   color: #fff;
 }
 
+
+.main_img img{
+width: 367px;
+    top: 65px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+
 .main_text_box p{
-    font-size: 30px;
+  margin: auto;
+    width: 100%;
+    font-size: 25px;
     color: #545151;
     padding-top: 0px;
     margin-top: 0px;
     background-color: #fff;
     padding: 5px 35px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .main_text_box h1{
-
-    font-size: 51px;
-    line-height: 59px;
+text-align: center;
+    font-size: 43px;
+    line-height: 45px;
 }
 
 .main_form{
     position: relative;
-  top:150px;
+  top:113px;
   color: #fff;
 }
-.main_form h2{
-  color:#fff;
-}
-.main_form p{ 
 
+.main_form p{ 
+font-size: 21px;
   color: #fff;
+
+}
+
+.main_form_title {
+  background-color: rgba(255, 219, 77, 0.8);
+text-align: center;
+}
+.main_form_title h3{
+ color: #fff;
+    font-size: 35px;
+    line-height: 50px;
+     margin: 0;
+
 
 }
 .main_form form{
@@ -233,13 +266,19 @@ font-size: 18px;
 
 
 .main_form input{
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-  width: 75%;
-  text-align: center;
+    display: block;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
+.main_form a{
+font-size: 27px;
+}
 
 .plan_app {
   background-image: url(img/plan_bg.jpg);
@@ -294,6 +333,9 @@ div.tab button.active {
 padding-bottom: 25px;
 }
 
+.how_to_buy_items {
+padding: 40px 0px;
+}
 
 
 .step_n {
@@ -356,14 +398,14 @@ font-weight: 900;
 
 }
 
-.bank_item:hover{
+/*.bank_item:hover{
   top: -10px;
 
   transform: scale(1.05);
 -webkit-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
-}
+}*/
 
 .bank_item img{
     width: 80%;
@@ -387,14 +429,38 @@ box-shadow: 0px 25px 47px -12px rgba(0,0,0,0.75);
 
 
 .place {}
+.place h3{
+  text-align: center;
+  font-weight: 900;
+}
+.place_items{
+
+}
+
+.place_items ul{
+text-align: center;
+}
+
+.place_items ul li{
+    width: 32.5%;
+    display: inline-block;
+}
+
+.place_items ul li img{
+  width: 30%;
+}
 
 .place h2{
-position: absolute;
+//position: absolute;
     z-index: 10000;
 background-color: rgba(255,255,255,0.6);
     display: block;
     left: 0;
     right: 0;
+
+}
+
+.mask{
 
 }
 

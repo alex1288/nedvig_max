@@ -91,7 +91,7 @@ p{
 section {
 	color: rgba(69, 69, 69, 0.9);
   position: relative;
-  top: -80px;
+  //top: -80px;
 }	
 
 p{
@@ -210,7 +210,7 @@ font-size: 18px;
 
 .main_img img{
 width: 367px;
-    top: 65px;
+    top: 57px;
     position: relative;
     display: block;
     margin: auto;
@@ -598,6 +598,9 @@ height: 120px;
 width: 100%
 }
 
+.contacts {
+background-color: #32383a;
+}
 /*==========Карусель ==========*/
 
 .item {

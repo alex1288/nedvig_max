@@ -488,6 +488,9 @@ padding: 25px 0px;
     width: 32.5%;
     display: inline-block;
 }
+.place_items ul li p{
+font-weight: 900;
+}
 
 .place_items ul li img{
   width: 30%;

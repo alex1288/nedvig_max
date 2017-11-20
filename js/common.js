@@ -41,30 +41,34 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	// $(".scroll").click(function() {
-	// 	$.scrollTo($("#price"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
+	$("#menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
 
-	// $(".scroll").click(function() {
-	// 	$.scrollTo($("#works"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
 
 
-	// $(".scroll").click(function() {
-	// 	$.scrollTo($("#reviews"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
+	$("#menu2").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
 
-	// $("a.scroll").click(function() {
-	// 	$.scrollTo($(".div"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
 
 	//Каруселька
 	//Документация: 

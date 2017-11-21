@@ -42,28 +42,28 @@
 	<div class="top_line">
 		<div class="container">
 			<div class="row">
-		<div class="nav_left col-md-5 col-xs-5 col-sm-5">
+		<div class="nav_left col-md-5 col-xs-2 col-sm-2 ">
 			<nav id="menu">
-			<ul>
+			<ul class="hidden-xs hidden-sm">
 				<li><a href="#main_box">Выбор квартиры</a></li>
 				<li><a href="#plan_app">Планировка</a></li>
 				<li><a href="#how_to_buy">Как купить</a></li>
 			</ul>
 			</nav>
 		</div>
-		<div class="main_logo  col-md-2 col-xs-2 col-sm-2">
+		<div class="main_logo  col-md-2 col-xs-8 col-sm-8">
 			<a href="/"></a>
 		</div>
 
 
-		<div class="nav_right   col-md-5 col-xs-5 col-sm-5">
-			<nav id="menu2">
+		<div class="nav_right   col-md-5 col-xs-2 col-sm-2">
+			<nav id="menu2" class="hidden-xs hidden-sm">
 				<ul>
 				<li><a href="#place">Расположение</a></li>
 				<li><a href="#ipoteka">Ипотека</a></li>
-				<li><a href="#">(4822) 75-16-86</a>
-<p>
-	<a>заказать звонок</a>
+				<li><a href="#" style="font-size: 24px;">(4822) 75-16-86</a>
+<p class="margin_0">
+	<a class="popap" href="#form">заказать звонок</a>
 </p>
 				</li>
 			</ul>
@@ -75,45 +75,51 @@
 
 </header>
 
-<section class="main_box"  >
-<div class="gray_style"  style="height: 667px;">
+<section class="main_box" id="main_box" >
+	<div class="gray_style" >
 
-<div class="container ">
-	<div class="row">
-		<div class="col-lg-6 ">
-			<div class="main_text_box">
+		<div class="container ">
+			<div class="row">
+				<div class="col-lg-6 col-xs-12 ">
+					<div class="row">
+					<div class="main_text_box">
 
-			<h1><span style="font-size: 87px; line-height: 100px;">Новый город</span> <br>Квартиры от застройщика </h1>
-			<p>Квартиры в новостройке от 900 <span style="text-transform: none;">т. р.</span></p>
-			</div>
-			<div class="main_img">
-			<img src="img/woman1.png" alt="">
-		</div>
-
-		</div>
-
-
-		<div class="col-lg-6">
-			<div class="main_form gray_style">
-			<div class="main_form_title">
-					<h3>Закажите звонок </h3>
+						<h1><span style="">Новый город</span> <br>Квартиры от застройщика </h1>
+						<p>Квартиры в новостройке от 900 <span style="text-transform: none;">т. р.</span></p>
 					</div>
-			<form action="">
-				
+					</div>
+					<div class="main_img hidden-xs hiddem-sm">
+						<img src="img/woman1.png" alt="">
+					</div>
 
-				<P>Заказать звонок специалиста по подбору квартир <br>мы перезвоним через 23 секунды</p>
-				<input type="text" placeholder="Ваше имя">
-				<input type="text" placeholder="Телефон">
-				<P>
-					<a>Отправить</a>
-				</P>
-			</form>
+				</div>
+
+
+				<div class="col-lg-6  col-xs-12">
+					<div class="row">
+					<div class="main_form gray_style">
+						<div class="main_form_title">
+							<h3>Закажите звонок </h3>
+						</div>
+						<form >
+
+
+							<P>Заказать звонок специалиста по подбору квартир <br>мы перезвоним через 23 секунды</p>
+								<input type="text" name="name" placeholder="Ваше имя" required>
+								<input type="text" id="phone2" name="phone" placeholder="Телефон" required>
+								<p>
+
+
+									<a>Отправить</a>
+								</p>
+							</form>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		</div>
-	</div>
-</div>
-</div>
-</section>
+	</section>
 
 
 
@@ -122,7 +128,7 @@
 
 		<div class="container">
 			<h2>Планировки квартир</h2>
-			<div class="col-md-12">
+			<div class="">
 				<div class="row">
 					<div class="tab">
 						<button class="tablinks" onclick="openCity(event, 'studio')"  id="defaultOpen">Студия</button>
@@ -147,7 +153,7 @@
 										Жилая площадь 18.50 м2<br>	
 										Стоимость от <b>890 100 ₽</b>
 									</p>
-									<p class="text-testimonial"><a href="">Заказать звонок специалиста</a></p>
+									<p class="text-testimonial"><a class="href_order popap" href="#form">Заказать звонок специалиста</a></p>
 								</div>
 								</div>
 					</div>
@@ -167,7 +173,7 @@
 										Жилая площадь 25.50 м2<br>
 										Стоимость от <b>1 398 100 ₽		</b>							
 									</p>
-									<p class="text-testimonial"><a href="">Заказать звонок специалиста</a></p>
+									<p class="text-testimonial"><a class="href_order popap"  href="#form">Заказать звонок специалиста</a></p>
 									</div>
 								</div>
 					</div>
@@ -188,7 +194,7 @@
 										Жилая площадь 30.50 м2<br>
 										Стоимость от <b>2 375 000 ₽</b>
 										</p>
-										<p class="text-testimonial"><a href="">Заказать звонок специалиста</a></p>
+										<p class="text-testimonial"><a class="href_order popap"  href="#form">Заказать звонок специалиста</a></p>
 									</div>
 								</div>
 					</div>
@@ -208,7 +214,7 @@
 										Жилая площадь 60,50 м2<br>	
 										Стоимость от <b>2 890 850 ₽</b>
 									</p>
-								<p class="text-testimonial"><a href="">Заказать звонок специалиста</a></p>
+								<p class="text-testimonial"><a class="href_order popap"  href="#form">Заказать звонок специалиста</a></p>
 							</div>
 									
 								</div>
@@ -273,12 +279,12 @@ document.getElementById("defaultOpen").click();
 	</div>
 			
 			</div>
-			<a href="#" style="text-align: center;display: block;">Заказать звонок консультанта</a>
+			<p style="text-align: center;"><a href="#form"  class="popap href_order" >Заказать звонок</a></p>
 </div>
 </section>
 
 <section class="place " id="place">
- 	<div class="white_style" style="height: 702px;     background-color: rgba(255, 255, 255, 0.5);"> 
+ 	<div class="white_style_07"> 
 <h2>В шаговой дотупности от дома</h2>
 <div class="container">
 	<div class="row">
@@ -372,7 +378,7 @@ document.getElementById("defaultOpen").click();
 	<p>Ставка: <b>от 12,5%</b></p>
 	<p>Первоначальный взнос: <b>от 15</b></p>
 	<p>Срок кредитования: <b>30 лет</b></p>
-	<img style="bottom: 65px; right: 10px; width: 130px;" src="img/icon/logo_ipt.png" alt="">
+	<img style="bottom: 65px; right: 10px; width: 130px;     z-index: -1;" src="img/icon/logo_ipt.png" alt="">
 	<img src="img/icon/sber.png" alt="">
 </li>
 </ul>
@@ -387,8 +393,9 @@ document.getElementById("defaultOpen").click();
 	<div class="change_dbl">
 <h2>Зачет вторичного жилья</h2>
 <div class="container">
-	<div class="row">
+<div class="row">
 		<div class="col-lg-12">
+				<div class="row">
 			<div class="change_box">	
 			<div class="change_title">
 			<h3>Продайте свою квартиру и получите комфортное жилье!</h3>
@@ -412,16 +419,17 @@ document.getElementById("defaultOpen").click();
 </ul>
 
 
-<p><a>узнайте подробности у нашего специалиста</a></p>
+<p style="text-align: right;"><a href="#form"   class="popap href_order" >Узнайте подробности</a></p>
 </div>
 </div>
 		</div>
+	</div>
 	</div>
 </div>
 </div>
 </section>
 
-<section class="gallery" id="gallery">
+<section class="gallery hidden-xs" id="gallery">
 <h2>Галерея</h2>
 <div class="container">
 	<div class="row">
@@ -453,14 +461,13 @@ document.getElementById("defaultOpen").click();
 
 <div class="hidden popUpform">
 
-	<form  id="form2">
+	<form  id="form">
 		<h2 style="font-weight: bold;">Оставить заявку</h2>
-		<p>позвонить по телефону <b>+7 (4822) 75-16-86 </b></p>
-		<p>или заказать обратный звонок: <br>	
+		
 
 
-			<input style="margin-top: 20px;" type="text" name="name" placeholder="Иванов Иван" required>
-			<input type="text" id="phone2" name="phone" placeholder="+7 (___) ___-__-__" required>
+			<input style="margin-top: 25px;" type="text" name="name" placeholder="Ваше имя" required>
+			<input type="text" id="phone" name="phone" placeholder="телефон" required>
 			<button class="but_order" style="height: 53px;">Отправить</button>
 		</form>
 	</div>
@@ -473,20 +480,24 @@ document.getElementById("defaultOpen").click();
 				<img src="img/icon/logo.png" alt="">
 			</div> -->
 			<div class="col-lg-4">
+				<nav id="menu3">
 				<p><a href="#main_box">Выбор квартиры</p></a>
-				<p><a href="#plan_app"></a>Планировка</p></a>
+				<p><a href="#plan_app">Планировка</p></a>
 				<p><a href="#how_to_buy">Как купить</p></a>
+				</nav>
 			</div>
 			<div class="col-lg-4">
+				<nav id="menu4">
 				<p><a href="#place">Расположение</p></a>
 				<p><a href="#ipoteka">Ипотека</p></a>
 				<p><a href="#change">Зачет вторичного жилья</p></a>
+				</nav>
 
 			</div>
 			<div class="col-lg-4">
-				<p><a href="#">(4822) 75-16-86</p></a>
+				<p><a href="#" style="font-size: 31PX;">(4822) 75-16-86</p></a>
 				<p>
-					<a href="#">заказать звонок</a>
+					<a href="#form"  class="popap">заказать звонок</a>
 				</p>
 			</div>
 		</div>

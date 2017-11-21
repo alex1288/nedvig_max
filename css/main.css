@@ -261,6 +261,7 @@ text-align: center;
     position: relative;
   top:113px;
   color: #fff;
+  margin-left: 30px;
 }
 
 .main_form p{ 
@@ -561,6 +562,8 @@ font-weight: 100;
 
 .place_items ul li img{
   width: 100px;
+  display: block;
+  margin: auto;
 }
 
 .place h2{
@@ -935,11 +938,13 @@ h3.city-name {
 
 
 
-}
+
 /*всплывающая форма обратной связи end*/
 
 
-
+.phone_top{
+  font-size: 24px;
+}
 
 
                       /*Мобильная версия*/
@@ -949,12 +954,20 @@ h3.city-name {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+.main_text_box h1 span {font-size: 75px;line-height: 80px;}
+.main_text_box h1 {font-size: 36px;line-height: 40px;}
+.main_form{top:102px;}
+div.tab button{width: auto;}
+.nav_left ul li a, .nav_right ul li a{font-size: 16px;}
+.phone_top{font-size: 20px;}
+
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+.main_text_box h1 span {font-size: 75px;line-height: 80px;}
+.main_text_box h1 {font-size: 36px;line-height: 40px;}
 }
 
 
@@ -962,7 +975,8 @@ h3.city-name {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-
+.main_text_box h1 span {font-size: 75px;line-height: 80px;}
+.main_text_box h1 {font-size: 36px;line-height: 40px;}
 }
 
 /* Extra Small Devices, Phones */
@@ -971,7 +985,7 @@ h2{    font-size: 25px;}
 
 .plan_app, .ipoteka, .change, .change_dbl, .place {background-image: none;}
 .main_logo{    height: 104px;background-size: 119px;}
-.main_form{top: 69px;}
+.main_form{top: 69px; margin-left: 0;}
 .main_form p{font-size: 18px;}
 .top_line{height: 130px;}
 .white_style_07{height: auto;}
@@ -987,6 +1001,11 @@ div.tab button{font-size: 27px;width: auto;}
 .main_text_box h1 {text-align: center;font-size: 23px;line-height: 30px;}
 .main_text_box p{font-size: 16px;padding: 10px 0px;}
 .change_title h3{font-size: 21px;}
+.step_n p{top: -28px;left: 250px;    font-size: 100px;}
+.place_items ul{padding: 0;}
+ .mfp-content form{width: 310px;padding: 10px 15px;}
+.mfp-content form h2 {font-size: 22px;}
+.mfp-content h2 {margin-top: 0px;}  
 }
 
 /* Custom, iPhone Retina */

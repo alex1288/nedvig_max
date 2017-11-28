@@ -36,11 +36,15 @@ footer p{color:#f0ecec;}
 .nav_left ul li a, .nav_right ul li a{font-size:21px;color:#585550;}
 .nav_left ul li a:hover, .nav_right ul li a:hover{color:#797670;}
 .margin_0{margin:0;cursor:pointer;}
+
+.mobi_phone a{font-size: 35px; right: 5px; top: 5px;position: relative;}
+.mobi_phone i{}
 .main_box{height:667px;background-image:url(img/maxresdefault1.jpg);background-repeat:no-repeat;-webkit-background-size:auto;background-size:cover;position:relative;top:-80px;}
 .main_text_box{position:relative;top:50px;color:#fff;}
 .main_text_box h1 span{font-size:87px;line-height:100px;}
 .main_img img{width:367px;top:57px;position:relative;display:block;margin:auto;}
-.main_text_box p{margin:auto;width:100%;font-size:25px;color:#545151;padding-top:0px;margin-top:0px;background-color:#fff;padding:5px 35px;text-transform:uppercase;text-align:center;}
+.main_text_box p{margin:auto;width:100%;font-size:22px;color:#fff;padding-top:0px;margin-top:0px;  padding: 25px 0px 25px 80px;text-transform:uppercase;text-align:center;}
+.top_p{background-image: url(img/string.png);    background-size: 102%;    width: 100%;height: 82px;background-position: 50%;margin-bottom: 8px;}
 .main_text_box h1{text-align:center;font-size:42px;line-height:45px;}
 .main_form{position:relative;top:113px;color:#fff;margin-left:30px;}
 .main_form p{font-size:21px;color:#fff;padding:0px 65px;}
@@ -145,12 +149,17 @@ h3.city-name{padding:0px 0;font-size:31px;font-family:"Roboto", sans-serif;font-
 div.tab button{width:auto;}
 .nav_left ul li a, .nav_right ul li a{font-size:16px;}
 .phone_top{font-size:20px;}
+.main_text_box p {font-size: 20px;padding: 28px 0px 25px 80px;}
+.top_p {margin-bottom: 33px;}
 }
 @media only screen and (max-width:992px){.main_text_box h1 span{font-size:75px;line-height:80px;}
 .main_text_box h1{font-size:36px;line-height:40px;}
+.main_text_box p{padding:25px 0px ;}
 }
 @media only screen and (max-width:768px){.main_text_box h1 span{font-size:75px;line-height:80px;}
 .main_text_box h1{font-size:36px;line-height:40px;}
+.top_p{margin-bottom: 0;}
+.mobi_phone a {top:30px;}
 }
 @media only screen and (max-width:480px){h2{font-size:25px;}
 .plan_app, .ipoteka, .change, .change_dbl, .place{background-image:none;}
@@ -169,15 +178,19 @@ div.tab button{font-size:27px;width:auto;}
 .bank_item p{font-size:20px;margin-left:15px;}
 .main_text_box h1 span{font-size:47px;line-height:50px;}
 .main_text_box h1{text-align:center;font-size:23px;line-height:30px;}
-.main_text_box p{font-size:16px;padding:10px 0px;}
+.main_text_box p{font-size:16px;padding:30px 0px 30px 45px;}
 .change_title h3{font-size:21px;}
 .step_n p{top:-28px;left:250px;font-size:100px;}
 .place_items ul{padding:0;}
 .mfp-content form{width:310px;padding:10px 15px;}
 .mfp-content form h2{font-size:22px;}
 .mfp-content h2{margin-top:0px;}
+.top_p{    background-size: 122%;}
+.mobi_phone a {top:5px;}
+
 }
 @media only screen and (max-width:320px){.mfp-content form{width:310px;padding:10px 15px;}
 .mfp-content form h2{font-size:22px;}
 .mfp-content h2{margin-top:0px;}
-}
+.main_text_box p { padding: 0px 0px;}
+.top_p {background-image: none;  height: auto; }

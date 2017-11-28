@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
+	<link rel="stylesheet" href="css/main.css?ver=1.6" />
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="css/fm.revealator.jquery.min.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" />
@@ -57,11 +57,12 @@
 
 
 		<div class="nav_right   col-md-5 col-xs-2 col-sm-2">
+			<div class="mobi_phone hidden-lg hidden-md"><a href="tel:+74822751686"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
 			<nav id="menu2" class="hidden-xs hidden-sm">
 				<ul>
 				<li><a href="#place">Расположение</a></li>
 				<li><a href="#ipoteka">Ипотека</a></li>
-				<li><a href="#" class="phone_top" >(4822) 75-16-86</a>
+				<li><a href="tel:+74822751686" class="phone_top" >(4822) 75-16-86</a>
 <p class="margin_0">
 	<a class="popap" href="#form">заказать звонок</a>
 
@@ -85,8 +86,8 @@
 					<div class="row">
 					<div class="main_text_box">
 
-						<h1><span>Новый город</span> <br>Квартиры от застройщика </h1>
-						<p>Квартиры в новостройке от 900 <span style="text-transform: none;">т. р.</span></p>
+						<h1><span>Новый город</span> <!-- <br>Квартиры от застройщика  --></h1>
+						<div class="top_p"><p>Квартиры в новостройке от 900 <span style="text-transform: none;">т. р.</span></p></div>
 					</div>
 					</div>
 					<div class="main_img hidden-xs hiddem-sm">
@@ -288,7 +289,7 @@ document.getElementById("defaultOpen").click();
 </div>
 </section>
 
-<section class="place " id="place">
+<section class="place " >
  	<div class="white_style_07"> 
 <h2>В шаговой дотупности от дома</h2>
 <div class="container">
@@ -340,7 +341,7 @@ document.getElementById("defaultOpen").click();
 	</div>
 </div>
 </div>
-
+<div id="place"></div>
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2fb7cce1cf704eaa33271820cc33cba53a7231e6d2cb3438d5669a52908cdfa3&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 </section>
 
@@ -498,7 +499,8 @@ document.getElementById("defaultOpen").click();
 
 			</div>
 			<div class="col-lg-4 col-md-4">
-				<p><a href="#" style="font-size: 31PX;">(4822) 75-16-86</p></a>
+				<p><a href="#main_box">Агенство "МИК-Недвижимость"</a></p>
+				<p><a href="tel:+74822751686" >(4822) 75-16-86</p></a>
 				<p>
 					<a href="#form"  class="popap">заказать звонок</a>
 				</p>
